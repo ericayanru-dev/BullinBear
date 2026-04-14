@@ -7,6 +7,7 @@ router.use(express.static("public"));
 router.use("/css", express.static(__dirname + "public/css"));
 router.use("/js", express.static(__dirname + "public/js"));
 router.use("/images", express.static(__dirname + "public/images"));
+router.use("/font-awesome-4.7.0", express.static(__dirname + "public/font-awesome-4.7.0"));
 
 module.exports = router;
 

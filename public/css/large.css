@@ -1,0 +1,30 @@
+@media (min-width:1000px) {
+
+  /* hide hamburger */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* sidebar becomes static */
+  .sidebar {
+    position: fixed;
+    transform: translateX(0);
+    overflow: hidden;
+
+    width: 220px;
+    height: calc(100vh - 80px); /* match header height */
+    overflow-y: auto; 
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-text-placeholder) transparent;
+  }
+
+  
+
+  
+    
+    /* RESPONSIVE GRID */
+    .trade-versus .grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+  
+}

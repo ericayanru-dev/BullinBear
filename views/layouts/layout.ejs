@@ -2,13 +2,16 @@
 <html lang="en">
      <%- include("../partials/head") %>
 <body>
-
     <div id="wrapper" class="wrapper">
-    <main>
-        <%- body %>
-    </main>
+        <%- include("../partials/header") %>
+        <div class=".layout">
+        <%- include("../partials/navigation") %>
+        <main>
+            <%- body %>
+        </main>
         <%- include("../partials/footer") %>
+        </div>
+       
     </div>
-
 </body>
 </html>
