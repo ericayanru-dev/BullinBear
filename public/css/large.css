@@ -1,5 +1,9 @@
 @media (min-width:1000px) {
 
+  .layout {
+    display: block; /* not flex */
+  }
+
   /* hide hamburger */
   .menu-toggle {
     display: none;
@@ -18,13 +22,13 @@
     scrollbar-color: var(--color-text-placeholder) transparent;
   }
 
-  
-
-  
+  main {
+    margin-left: 220px; /* same as sidebar width */
+  }  
     
     /* RESPONSIVE GRID */
     .trade-versus .grid {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-}
+    grid-template-columns: repeat(2, 1fr);
+  }
   
 }

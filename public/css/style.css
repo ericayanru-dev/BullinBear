@@ -334,7 +334,6 @@ main {
 
 
 .trade-versus {
-  margin-top: calc(100vh - 90vh);
   display: grid;
   grid-template-columns: 1fr;
   padding: 20px;
@@ -356,6 +355,7 @@ main {
   justify-content: center;
   gap: 10px;
   position: relative;
+  height: 200px;
   overflow: hidden;
 
   text-decoration: none;
@@ -380,6 +380,38 @@ main {
 
 .card:active {
   transform: scale(0.95);
+}
+
+/* overlay for readability */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+/* text above overlay */
+.card span {
+  position: relative;
+  z-index: 2;
+  font-size: 1.2rem;
+}
+
+.card:nth-child(1) { 
+  background: url("/images/TradeVersus1.jpeg") center/cover no-repeat;
+}
+
+.card:nth-child(2) { 
+  background: url("/images/TradeVersus2.jpeg") center/cover no-repeat;
+}
+
+.card:nth-child(3) { 
+  background: url("/images/TradeVersus3.jpeg") center/cover no-repeat;
+}
+
+.card:nth-child(4) { 
+  background: url("/images/TradeVersus4.jpeg") center/cover no-repeat;
 }
 
 .card i {
