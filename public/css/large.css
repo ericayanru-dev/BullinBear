@@ -1,34 +1,20 @@
-@media (min-width:1000px) {
+/* =========================
+   DESKTOP
+========================= */
+@media (min-width: 1000px) {
 
-  .layout {
-    display: block; /* not flex */
-  }
-
-  /* hide hamburger */
-  .menu-toggle {
-    display: none;
-  }
-
-  /* sidebar becomes static */
+  /* SIDEBAR FIXED */
   .sidebar {
-    position: fixed;
     transform: translateX(0);
-    overflow: hidden;
-
-    width: 220px;
-    height: calc(100vh - 80px); /* match header height */
-    overflow-y: auto; 
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-text-placeholder) transparent;
   }
 
+  /* PUSH CONTENT */
   main {
-    margin-left: 220px; /* same as sidebar width */
-  }  
-    
-    /* RESPONSIVE GRID */
-    .trade-versus .grid {
+    margin-left: 220px;
+  }
+
+  /* PERFECT 2x2 GRID */
+  .trade-versus .grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
 }
